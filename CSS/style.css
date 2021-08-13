@@ -102,9 +102,118 @@ header {
     background-image: url(../Media/Images/abk.JPG);
     border-radius: 50%;
 }
+
 main {
     margin-top: 60px;
     background: #f1f5f9;
     min-width: 90vh;
-    padding: 1rem;
+    padding: 1rem 3rem;
 }
+
+.dash-title {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.dash-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+
+}
+
+.card-single {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 2);
+}
+
+.card-body {
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-body span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1.4rem;
+}
+
+.card-body h5 {
+    color: var(--text-grey);
+    font-size: 1rem;
+}
+
+.card-body h4 {
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    margin-top: .2rem;
+}
+
+.card-footer {
+    padding: .2rem 1rem;
+    background: #f9fafc;
+}
+
+.card-footer a{
+    color: var(--main-color);
+}
+
+.recent {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-column-gap: 1.5rem;
+}
+
+.activity-card {
+    background: #fff;
+    border-radius: 7px;
+}
+
+.activity-card h3 {
+    color: var(--text-grey);
+    margin: 1rem;
+    text-align: center;
+}
+
+.activity-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.activity-card thead {
+    background: #efefef;
+    text-align: left;
+}
+
+th, td {
+   font-size: .9rem;
+   padding: 1rem .1rem;
+   color:
+    var(--color-dark);
+}
+
+td {
+    font-size: .8rem;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+.badge {
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.badge.sucess {
+    background-color: #DEF7EC;
+    color: var(--main-color);
+} 
